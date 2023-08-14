@@ -40,11 +40,12 @@ public class GridManager : MonoBehaviour
     {
         //TODO
         Debug.Log("VICTORY");
-        Reset();
+        //Reset();
     }
 
     public void Reset()
     {
+        Debug.Log("RESET");
         _lineManager.Reset();
         foreach (Node node in _grid.Values)
         {
