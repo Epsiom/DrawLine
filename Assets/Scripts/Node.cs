@@ -38,6 +38,9 @@ public class Node : MonoBehaviour
         highlighted_node = _gridColors.getColor("highlighted_node");
         selected_node = _gridColors.getColor("selected_node");
         active_node = _gridColors.getColor("active_node");
+
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = _gridColors.getColor("inactive_node");
     }
 
     void OnMouseEnter()

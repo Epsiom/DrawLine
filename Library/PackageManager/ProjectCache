@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638190898453418422
-    m_Hash: 2624736591
+      ticks: 638274544634240138
+    m_Hash: 1082240786
   m_LockFileStatus:
     m_FilePath: C:/Users/steve/Desktop/_PROJECTS/Unity/DrawLine/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638190898773569410
-    m_Hash: 834079187
+      ticks: 638274544634250145
+    m_Hash: 407264249
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -114,6 +114,7 @@ m_PackageAssets:
         - 5.2.3
         - 5.2.4
         - 5.2.6
+        - 5.2.7
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -134,6 +135,7 @@ m_PackageAssets:
         - 7.0.8
         - 7.0.9
         - 7.0.10
+        - 7.0.11
         - 8.0.0-pre.3
         - 8.0.0-pre.4
         - 8.0.0
@@ -147,9 +149,12 @@ m_PackageAssets:
         - 9.0.0
         - 9.0.1
         - 9.0.2
+        - 9.0.3
         - 10.0.0-pre.1
         - 10.0.0-pre.2
         - 10.0.0
+        - 10.0.1
+        - 10.0.2
         compatible:
         - 5.1.0
         - 5.1.1
@@ -158,6 +163,7 @@ m_PackageAssets:
         - 5.2.3
         - 5.2.4
         - 5.2.6
+        - 5.2.7
         verified: 5.1.1
       dependencies:
       - name: com.unity.2d.common
@@ -594,6 +600,7 @@ m_PackageAssets:
         - 10.0.0-pre.1
         - 10.0.0-pre.2
         - 10.0.0
+        - 10.0.1
         compatible:
         - 5.2.0
         - 5.3.0
@@ -791,6 +798,8 @@ m_PackageAssets:
         - 2.0.1
         - 2.0.3
         - 2.0.4
+        - 2.0.5
+        - 2.0.7
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -816,6 +825,7 @@ m_PackageAssets:
         - 2.0.1
         - 2.0.3
         - 2.0.4
+        - 2.0.5
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -920,6 +930,8 @@ m_PackageAssets:
         - 3.0.18
         - 3.0.20
         - 3.0.21
+        - 3.0.22
+        - 3.0.24
         compatible:
         - 1.0.2
         - 1.0.6
@@ -957,6 +969,8 @@ m_PackageAssets:
         - 3.0.18
         - 3.0.20
         - 3.0.21
+        - 3.0.22
+        - 3.0.24
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -1034,6 +1048,7 @@ m_PackageAssets:
         - 2.0.16
         - 2.0.17
         - 2.0.18
+        - 2.0.20
         compatible:
         - 1.0.2
         - 1.0.3
@@ -1056,7 +1071,8 @@ m_PackageAssets:
         - 2.0.16
         - 2.0.17
         - 2.0.18
-        verified: 2.0.18
+        - 2.0.20
+        verified: 2.0.20
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -1104,7 +1120,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio Code as code
         editor for unity. Adds support for generating csproj files for intellisense
         purposes, auto discovery of installations, etc.
@@ -1151,7 +1167,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1222,6 +1238,9 @@ m_PackageAssets:
         - 1.3.2
         - 1.3.3
         - 1.3.4
+        - 1.3.5
+        - 1.3.7
+        - 1.3.8
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1234,6 +1253,9 @@ m_PackageAssets:
         - 1.3.2
         - 1.3.3
         - 1.3.4
+        - 1.3.5
+        - 1.3.7
+        - 1.3.8
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -1400,6 +1422,7 @@ m_PackageAssets:
         - 3.2.0-pre.2
         - 3.2.0-pre.3
         - 3.2.0-pre.4
+        - 3.2.0-pre.5
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
@@ -1408,6 +1431,7 @@ m_PackageAssets:
         - 3.2.0-pre.2
         - 3.2.0-pre.3
         - 3.2.0-pre.4
+        - 3.2.0-pre.5
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -1542,9 +1566,12 @@ m_PackageAssets:
         - 1.7.2
         - 1.7.3
         - 1.7.4
+        - 1.7.5
         - 1.8.0
         - 1.8.1
         - 1.8.2
+        - 1.8.3
+        - 1.8.4
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1577,9 +1604,12 @@ m_PackageAssets:
         - 1.7.2
         - 1.7.3
         - 1.7.4
+        - 1.7.5
         - 1.8.0
         - 1.8.1
         - 1.8.2
+        - 1.8.3
+        - 1.8.4
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -1651,6 +1681,7 @@ m_PackageAssets:
         all:
         - 1.0.0
         - 3.0.0-exp.1
+        - 3.0.0-exp.3
         compatible:
         - 1.0.0
         verified: 1.0.0
@@ -3460,6 +3491,8 @@ m_PackageAssets:
         - 1.0.6
         - 2.0.2
         - 2.0.3
+        - 2.0.4
+        - 2.0.5
         compatible:
         - 0.1.5-preview
         - 0.1.6-preview
@@ -3469,6 +3502,8 @@ m_PackageAssets:
         - 1.0.6
         - 2.0.2
         - 2.0.3
+        - 2.0.4
+        - 2.0.5
         verified: 1.0.6
       dependencies: []
       resolvedDependencies: []
@@ -3541,6 +3576,9 @@ m_PackageAssets:
         - 1.7.1
         - 1.8.1
         - 1.8.2
+        - 1.9.0
+        - 1.10.1
+        - 1.11.0
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3563,6 +3601,9 @@ m_PackageAssets:
         - 1.7.1
         - 1.8.1
         - 1.8.2
+        - 1.9.0
+        - 1.10.1
+        - 1.11.0
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest
@@ -3629,6 +3670,7 @@ m_PackageAssets:
         - 1.2.4
         - 1.2.5
         - 1.2.6
+        - 1.3.1
         compatible:
         - 0.0.12-preview.2
         - 0.0.12-preview.5
@@ -3647,6 +3689,7 @@ m_PackageAssets:
         - 1.2.4
         - 1.2.5
         - 1.2.6
+        - 1.3.1
         verified: 1.2.6
       dependencies: []
       resolvedDependencies: []
@@ -3727,6 +3770,7 @@ m_PackageAssets:
         - 6.0.3
         - 6.0.4
         - 6.0.5
+        - 6.0.6
         - 7.0.0-pre.3
         - 7.0.0-pre.4
         - 7.0.0
@@ -3738,6 +3782,9 @@ m_PackageAssets:
         - 8.0.0
         - 8.0.1
         - 9.0.0-pre.1
+        - 9.0.0-pre.2
+        - 9.0.0
+        - 9.0.1
         compatible:
         - 4.1.0
         - 4.2.0
@@ -3797,7 +3844,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 2D
-      type: 
+      type: asset
       description: "2D Path provides tooling to edit shapes (polygons and B\xE9zier
         splines) in EditorWindows and the SceneView."
       status: 4
@@ -3841,7 +3888,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0

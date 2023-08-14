@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    [SerializeField] private int _width = 4;
-    [SerializeField] private int _height = 4;
-    [SerializeField] private int _nodeInterspace = 4;
+    [SerializeField] private int _width = 4;                // Number of nodes horizontally
+    [SerializeField] private int _height = 4;               // Number of nodes vertically
+    [SerializeField] private float _nodeInterspace = 4f;    // Impacts space between the nodes
     [SerializeField] private Node _nodePrefab;
     [SerializeField] private ColorSO _gridColors;
     [SerializeField] private LineManager _lineManager;
@@ -24,7 +24,7 @@ public class GridManager : MonoBehaviour
         {
             for (int y=0; y<_height; y++)
             {
-                Node spawnedNode = Instantiate(_nodePrefab, new Vector3(x+x*_nodeInterspace - _gridMiddleX, y+y*_nodeInterspace - _gridMiddleY, 0), Quaternion.identity);     // Instanciates the node
+                Node spawnedNode = Instantiate(_nodePrefab, new Vector3(x+x*_nodeInterspace - _gridMiddleX, y+y*_nodeInterspace - _gridMiddleY, 0), Quaternion.identity);     // Instantiates the node
                 Vector2 coordinates = new Vector2(x, y);
                 spawnedNode.name = $"Node {x} {y}";
                 spawnedNode.Init(coordinates, _lineManager, this, _gridColors);
@@ -34,6 +34,27 @@ public class GridManager : MonoBehaviour
             }
         }
         //TODO: reduce node interspace on bigger grids
+    }
+
+    public void TriggerLevelVictory()
+    {
+        //TODO
+        Debug.Log("VICTORY");
+        Reset();
+    }
+
+    public void Reset()
+    {
+        _lineManager.Reset();
+        foreach (Node node in _grid.Values)
+        {
+            node.ChangeNodeState(NodeState.INACTIVE);
+        }
+    }
+
+    public int GetTotalNodeCount()
+    {
+        return _grid.Count;
     }
 
     private Vector3 GetNodeCoordinates(int x, int y)
