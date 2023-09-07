@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Shapes;
 
 public class LineManager : MonoBehaviour
 {
-    public LineRenderer LineRenderer;
     public GridManager GridManager;
     public ColorSO GridColors;
 
     private List<Node> _linkedNodes = new List<Node>();
     private Node _selectedNode;
 
+    [SerializeField] private Polyline _mainLine;
+
     public void Awake()
     {
-        LineRenderer.startColor = GridColors.getColor("line");
-        LineRenderer.endColor = GridColors.getColor("line");
+        _mainLine.Color = GridColors.getColor("line");
     }
 
     public void Update()
@@ -55,8 +56,10 @@ public class LineManager : MonoBehaviour
                     _selectedNode.ChangeNodeState(NodeState.ACTIVE);
                 }
                 clickedNode.ChangeNodeState(NodeState.SELECTED);
-                LineRenderer.positionCount += 1;
-                LineRenderer.SetPosition(_linkedNodes.Count-1, clickedNode.gameObject.transform.position);
+                //LineRenderer.positionCount += 1;
+                //LineRenderer.SetPosition(_linkedNodes.Count-1, clickedNode.gameObject.transform.position);
+                _mainLine.AddPoint(clickedNode.gameObject.transform.position);
+
                 _selectedNode = clickedNode;
 
                 if (_linkedNodes.Count == GridManager.GetTotalNodeCount())
@@ -111,6 +114,7 @@ public class LineManager : MonoBehaviour
     {
         _selectedNode = null;
         _linkedNodes.Clear();
-        LineRenderer.positionCount = 0;
+        //LineRenderer.positionCount = 0;
+        _mainLine.SetPoints(new List<Vector3>());
     }
 }

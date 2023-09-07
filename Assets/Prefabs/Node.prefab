@@ -96,8 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1b2845332c59a4da589f3659caa17b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Coordinates: {x: 0, y: 0}
+  NodeState: 0
   _spriteRenderer: {fileID: 4604110166659994788}
-  _GridColors: {fileID: 11400000, guid: a6eecc33fdd2e2c4d99e30c55d297e37, type: 2}
+  _lineManager: {fileID: 0}
 --- !u!58 &3878270706343444195
 CircleCollider2D:
   m_ObjectHideFlags: 0
